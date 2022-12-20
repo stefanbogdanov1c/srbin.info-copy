@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}    
+
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+
+/* header */
+header{
+    display: block;
+    width: 100%;
+}
+
+.header_top{
+    background-color: #081c24;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.header_top ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.header_top ul li{
+    padding: 5px;
+}
+
+.header_text{
+    color: #081c24;
+    display: flex;
+}
+
+.header_text ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.header_text ul li{
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header_bottom{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 5px 10px;
+    padding: 5px;
+}
+
+/* main body */
+
+
+.ribbon{
+    margin: 20px 0px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    border: 1px solid lightgrey;
+
+}
+
+.ribbon_left{
+    padding: 5px;
+    flex-basis: 80%;
+    display: flex;
+    justify-content: left;
+}
+
+.label{
+    background-color: #081c24;
+    color: white;
+    padding: 7px;
+    margin: 0 5px;
+    height: 35px;
+    width: fit-content;
+}
+
+
+.ribbon_right{
+    flex-basis: 20%;
+    margin: 0 5px;
+    background-color: #081c24;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding: 7px;
+}
+
+
+.main{
+    display: flex;
+}
+
+.main_article{
+    flex-basis: 48%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 5px;
+    height: 200px;
+}
+
+
+.main_article p{
+    align-items: flex-start;
+    color: white;
+    background-color: #081c24;
+    opacity: 0.7;
+    margin: 2px 5px;
+}
+
+.main_row{
+    flex-basis: 48%;
+    display: flex;
+    flex-direction: row;
+}
+.main_right{
+    flex-basis: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+#first{
+    background-image: url(images/vakcina.webp);
+    height: 410px;
+}
+#second{
+    background-image: url(images/policija.webp);
+}
+#third{
+    background-image: url(images/droga.webp);
+}
+#fourth{
+    background-image: url(images/ukraine.png);
+}
+
+/* responsive - tablet */
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        width: 80%;
+    }
+
+    .ribbon_right{
+        display: none;
+    }
+
+    .ribbon{
+        justify-content: left;
+    }
+    .ribbon_left{
+        justify-content: space-around;
+    }
+
+    .main{
+        flex-direction: column;
+    }
+}
+
+/* responsive - mobile */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
