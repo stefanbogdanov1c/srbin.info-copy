@@ -56,7 +56,10 @@ header{
     box-shadow: rgba(149, 157, 165, 0.5) 0px 5px 10px;
     padding: 5px;
 }
-
+/* hidden header */
+.header{
+    display: none;
+}
 /* main body */
 
 
@@ -87,6 +90,31 @@ header{
     height: 35px;
     width: fit-content;
 }
+#red{
+    background-color: red;
+}
+#red_border{
+    border-bottom: 2px solid red;
+}
+
+#orange{
+    background-color: orange;
+}
+#orange_border{
+    border-bottom: orange 2px solid;
+}
+
+#green{
+    background-color: green;
+}
+#green_border{
+    border-bottom: green 2px solid;
+}
+
+#gray{
+    background-color: gray;
+}
+
 
 
 .ribbon_right{
@@ -106,7 +134,23 @@ header{
     display: flex;
 }
 
+.main_left{ 
+    flex-basis: 48%;
+}
+
+
 .main_article{
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 5px;
+    height: 200px;
+}
+
+.main_article1{
     flex-basis: 48%;
     background-size: cover;
     background-position: center;
@@ -118,12 +162,18 @@ header{
     height: 200px;
 }
 
+.main_article1 p{
+    align-items: flex-start;
+    color: white;
+    background-color: #081c24;
+    margin: 2px 5px;
+}
+
 
 .main_article p{
     align-items: flex-start;
     color: white;
     background-color: #081c24;
-    opacity: 0.7;
     margin: 2px 5px;
 }
 
@@ -138,9 +188,10 @@ header{
     flex-direction: column;
 }
 
-#first{
+#first.main_article{
     background-image: url(images/vakcina.webp);
     height: 410px;
+    margin-bottom: 5px;
 }
 #second{
     background-image: url(images/policija.webp);
@@ -151,18 +202,196 @@ header{
 #fourth{
     background-image: url(images/ukraine.png);
 }
+#fifth{
+    background-image: url(images/sergej-nariskin.webp);
+}
+#sixth{
+    background-image: url(images/milan-laca-radulovic.png);
+}
+#seventh{
+    background-image: url(images/bitcoin.png);
+}
+#eight{
+    background-image: url(images/trump.png);
+}
+#ninth{
+    background-image: url(images/djanluka.png);
+}
+#tenth{
+    background-image: url(images/srbi.png);
+}
 
+
+#second.main_article1{
+    background-image: url(images/policija.webp);
+}
+#third.main_article1{
+    background-image: url(images/droga.webp);
+}
+#fourth.main_article1{
+    background-image: url(images/ukraine.png);
+}
+#fifth.main_article1{
+    background-image: url(images/sergej-nariskin.webp);
+}
+#sixth.main_article1{
+    background-image: url(images/milan-laca-radulovic.png);
+}
+#seventh.main_article1{
+    background-image: url(images/bitcoin.png);
+}
+#eight.main_article1{
+    background-image: url(images/trump.png);
+}
+#ninth.main_article1{
+    background-image: url(images/djanluka.png);
+}
+#tenth.main_article1{
+    background-image: url(images/srbi.png);
+}
+
+
+.small_container{
+    display: flex;
+    margin: 10px;
+}
+
+.sc_left{
+    flex-basis: 68%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+.naslov{
+    border-bottom: solid 2px #081c24;
+    display: flex;
+    justify-content: space-between;
+}
+.secondary{
+    display: flex;
+}
+
+#margin{
+    margin-top: 20px;
+}
+.secondary2{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.secondary_right{
+    flex-basis: 48%;
+}
+.secondary_left{
+    flex-basis: 48%;
+    margin-right: 15px;
+}
+.secondary_article{
+    display: flex;
+    margin: 5px;
+}
+.secondary_image{
+    flex-basis: 25%;
+}
+.secondary_image img{
+    width: 100px;
+    height: 70px;
+}
+.secondary_text{
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 5px;
+}
+.sc_right{
+    flex-basis: 30%;
+}
+.icons{
+    font-size: 50px;
+}
+.icons i{
+    padding: 5px;
+}
+
+.subscribe{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.buttons{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.buttons button{
+    margin: 5px;
+    background-color: #3399ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: 40px;
+}
+
+.tertiary_article{
+    margin: 10px;
+    border-bottom: 1px solid #081c24;
+}
+
+.quaternary_article{
+    margin: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.secondary1{
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    background-color: #081c24;
+    color: white;
+}
+.footer_top{
+    border-bottom: 1px solid white;
+
+}
+.footer_blog{
+    display: flex;
+    border-bottom: 1px solid white;
+}
+.third{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.footer_info{
+    display: flex;
+}
+
+.footer_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_bottom p{
+    width:300px;
+    font-size: 12px;
+}
 /* responsive - tablet */
 
 @media only screen and (max-width: 1000px) {
     .container {
         width: 80%;
     }
-
     .ribbon_right{
         display: none;
     }
-
     .ribbon{
         justify-content: left;
     }
@@ -173,12 +402,52 @@ header{
     .main{
         flex-direction: column;
     }
+
+    #first{
+        height: 50px;
+    }
+
+    .small_container{
+        flex-direction: column;
+    }
+
+    .secondary{
+        flex-direction: column;
+    }
+    .secondary1{
+       flex-direction: column; 
+    }
+    .main_row{
+        flex-basis: 100%;
+    }
+    .footer_blog{
+        flex-direction: column;
+    }
 }
 
 /* responsive - mobile */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .container {
         width: 90%;
+    }
+
+    .main_right{
+        flex-basis: 100%;
+    }
+
+    .main_row{
+        flex-basis: 100%;
+    }
+
+    header{
+        display: none;
+    }
+    .header{
+        display: flex;
+    }
+
+    .footer_info{
+        flex-direction: column;
     }
 }
